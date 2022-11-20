@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <script src="./index2.2.1.html"></script>
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+
+    <section class="conteudo">
+        <form class="forms" action="https://api.flit.com.br/submeterDados">
+            <div class="titulo">
+                <h1>Cadastro de Loja</h1>
+            </div>
+            <div class="preencher">
+                <div class="preencher">
+                    <label for="idNome">Nome</label>
+                    <input class="input" type="text" id="idNome" nome="nome" placeholder="Ex: Leandro" oninput=clickNome />
+                </div>
+                <br>
+                <div class="preencher">
+                    <label for="idEndereco">Endereço</label>
+                    <input class="entrada" type="text" id="IdEndereco" placeholder="Ex: Rua: Dos Aposentados" oninput=clickEndereco />
+                </div>
+                <br>
+                <div class="preencher">
+                    <div>
+                        <label>Dias da Semana de funcionamento</label>
+                    </div>
+                    <input type="checkbox" id="segunda" name="fsegunda">
+                    <label class="vereficar" for="segunda">Segunda</label>
+                    <input type="checkbox" id="terca" name="fterca">
+                    <label class="vereficar" for="terca">Terça</label>
+                    <input type="checkbox" id="quarta" name="fquarta">
+                    <label class="vereficar" for="quarta">Quarta</label>
+                    <input type="checkbox" id="quinta" name="fquinta">
+                    <label class="vereficar" for="quinta">Quinta</label>
+                    <input type="checkbox" id="sexta" name="fsexta">
+                    <label class="vereficar" for="sexta">Sexta</label>
+                    <input type="checkbox" id="sabado" name="fsabado">
+                    <label class="vereficar" for="sabado">Sábado</label>
+                    <input type="checkbox" id="domingo" name="fdomingo">
+                    <label class="vereficar" for="domingo">Domingo</label>
+
+                    <br>
+                    <div class="preencher">
+                        <label for="idAbertura">Horario Abertura</label>
+                        <input class="entrada" type="time" id="IdAbertura"  />
+                    </div>
+                    <br>
+                    <div class="preencher">
+                        <label for="idFechamento">Horario Fechamento</label>
+                        <input class="entrada" type="time" id="idFechamento"  />
+                    </div>
+                    <br>
+                    <div class="preencherBotao">
+                        <div class="entrada" type="submit" id="IdEnviar" >Cadastrar</div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
