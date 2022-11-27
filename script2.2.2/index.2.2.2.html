@@ -5,8 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <script src="./input2.2.2.js"></script>
+    
 </head>
 <body>
-    
+    <section class="cabecalho">
+        <img src="./imagens/logo_semsite_semfundo.png" alt="logo_flit" width="100px">
+    </section>
+    <section class="conteudo">
+        <div class="cartao">
+            <form class="forms">
+                <div class="entradasDiv">
+                    <label for="">
+                        Qual seu email ?
+                        <input class="entrada" type="text">
+                    </label>
+
+                </div>
+                <div class="entradasDiv"><br>
+                    <p class="description">Em uma escala de 0 a 10, qual a probabilidade de você<br> 
+                                            recomendar nosso curso para uma amigo ou conhecido?</p>
+                    <div class="entradasDiv">
+                        <div class="checkbox">
+                            <label for="1">
+                                1
+                                <input class="entrada" type="radio" id="1" nome="nota" value="1">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="2">
+                                2
+                                <input class="entrada" type="radio" id="2" nome="nota" value="2">
+                            </label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label for="3">
+                                3
+                                <input class="entrada" type="radio" id="3" nome="nota" value="3">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="4">
+                                4
+                                <input class="entrada" type="radio" id="4" nome="nota" value="4">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="5">
+                                5
+                                <input class="entrada" type="radio" id="5" nome="nota" value="5">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="6">
+                                6
+                                <input class="entrada" type="radio" id="6" nome="nota" value="6">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="7">
+                                7
+                                <input class="entrada" type="radio" id="7" nome="nota" value="7">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="8">
+                                8
+                                <input class="entrada" type="radio" id="8" nome="nota" value="8">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="9">
+                                9
+                                <input class="entrada" type="radio" id="9" nome="nota" value="9">
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label for="10">
+                                10
+                                <input class="entrada" type="radio" id="10" nome="nota" value="10">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="entradasDiv"><br>
+                    <p class="descricao">Em relação a nossa monitoria ao vivo, como você clasificaria ?</p>
+                    <p class="descricao">Selecionar estrela por estrela.</p>
+                    <div>
+                        <input type="checkbox" class="camada" id="entradaEstrela1" />
+                        <label for="entradaEstrela1">
+                            <img src="https://cdn-icons-png.flaticon.com/512/126/126482.png" id="estrela_1" class="estrela"
+                                width="40px">
+                        </label>
+
+                        <input type="checkbox" class="camada" id="entradaEstela2" />
+                        <label for="entradaEstela2">
+                            <img src="https://cdn-icons-png.flaticon.com/512/126/126482.png" id="estrela_2" class="estrela"
+                                width="40px">
+                        </label>
+
+                        <input type="checkbox" class="camada" id="entradaEstrela3" />
+                        <label for="entradaEstrela3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/126/126482.png" id="estrela_3" class="estrela"
+                                width="40px">
+
+                        </label>
+
+
+                        <input type="checkbox" class="camada" id="entradaEstrela4" />
+                        <label for="entradaEstrela4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/126/126482.png" id="estrela_4" class="estrela"
+                                width="40px">
+
+                        </label>
+
+                        <input type="checkbox" class="camada" id="entradaEstrela5" />
+                        <label for="entradaEstrela5">
+                            <img src="https://cdn-icons-png.flaticon.com/512/126/126482.png" id="estrela_5" class="estrela"
+                                width="40px">
+                        </label>
+
+                    </div>
+                </div>
+
+                <button id="enviarButton" type="submit">Enviar Reposta</button>
+            </form>
+        </div>
+    </section>
+
 </body>
 </html>
