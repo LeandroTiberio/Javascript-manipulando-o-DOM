@@ -7,35 +7,35 @@ function sendMessage() {
     console.log("Preparando Dados")
 }
 
-oninput = function() {
-    if (localStorage.getItem(idNome)){
+function receberParametros() {
+    if (localStorage.getItem("idNome")){
         let nome = localStorage.getItem(idNome)
         let idNome = document.getElementById(idNome);
-        idNome.innerHTML = nome;
+        idNome.value = nome;
     }
        
-    if (localStorage.getItem(idEndereco)){
+    if (localStorage.getItem("idEndereco")){
         let endereco = localStorage.getItem(idEndereco)
         let idEndereco = document.getElementById(idEndereco);
-        idEndereco.innerHTML = endereco;
+        idEndereco.value = endereco;
     }
         
 }
+receberParametros();
 
-
-function clickNome(element){
+function changeNome(event){
+    const element = event.target;
     let nome = element.value;
     console.log(nome);
-    let idNome = document.getElementById(idNome);
-    idNome.innerHTML = nome;
+    let idNome = element.id;
     localStorage.setItem(idNome, nome);
 }
 
-function clickEndereco(element){
+function changeEndereco(event){
+    const element = event.target
     let endereco = element.value;
     console.log(endereco);
-    let idEndereco = document.getElementById(idEndereco);
-    idEndereco.innerHTML = endereco;
+    let idEndereco = element.id;
     localStorage.setItem(idEndereco, endereco);
 }
 

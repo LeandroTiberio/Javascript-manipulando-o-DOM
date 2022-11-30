@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-    <script src="./index2.2.1.html"></script>
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
 </head>
 
 <body>
@@ -20,17 +20,27 @@
             <div class="preencher">
                 <div class="preencher">
                     <label for="idNome">Nome</label>
-                    <input class="input" type="text" id="idNome" nome="nome" placeholder="Ex: Leandro" oninput=clickNome />
+                    <input class="entrada"
+                        type="text"
+                        id="idNome"
+                        name="nome"
+                        placeholder="Ex: Leandro" 
+                        onchange="changeNome(event)"
+                    />
                 </div>
                 <br>
                 <div class="preencher">
                     <label for="idEndereco">Endereço</label>
-                    <input class="entrada" type="text" id="IdEndereco" placeholder="Ex: Rua: Dos Aposentados" oninput=clickEndereco />
+                    <input class="entrada" 
+                        type="text" 
+                        id="IdEndereco" 
+                        placeholder="Ex: Rua: Dos Aposentados" 
+                        onchange="changeEndereco(event)"/>
                 </div>
                 <br>
                 <div class="preencher">
                     <div>
-                        <label>Dias da Semana de funcionamento</label>
+                        <label>Dias de funcionamento</label>
                     </div>
                     <input type="checkbox" id="segunda" name="fsegunda">
                     <label class="vereficar" for="segunda">Segunda</label>
@@ -50,22 +60,24 @@
                     <br>
                     <div class="preencher">
                         <label for="idAbertura">Horario Abertura</label>
-                        <input class="entrada" type="time" id="IdAbertura"  />
+                        <input class="entrada" type="time" id="idAbertura"/>
                     </div>
                     <br>
                     <div class="preencher">
                         <label for="idFechamento">Horario Fechamento</label>
-                        <input class="entrada" type="time" id="idFechamento"  />
+                        <input class="entrada" type="time" id="idFechamento"/>
                     </div>
                     <br>
                     <div class="preencherBotao">
-                        <div class="entrada" type="submit" id="IdEnviar" >Cadastrar</div>
+                        <div class="entrada" type="submit" id="idEnviar" >Cadastrar</div>
                     </div>
 
                 </div>
             </div>
         </form>
     </section>
+    
+    <script src="./input2.2.1.js"></script>
 </body>
 
 </html>
