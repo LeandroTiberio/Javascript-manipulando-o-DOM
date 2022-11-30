@@ -1,0 +1,82 @@
+
+
+
+.procurar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 7vh;
+    background-color: yellow;
+}
+
+.percorrer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    min-height: 8vh;
+    background-color: yellow;
+    border: solid 2px black;
+    
+}
+
+.percorrerLinks {
+    color: black;
+    text-decoration: none;
+    border: solid 2px black;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 85vh;
+    background-color: #aca9a9;
+}
+
+.vantagens {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    min-height: 15vh;
+    width: 80vw;
+    padding: 20px;
+    margin-top: 1%;
+    border-radius: 25px;
+    background-color: white;
+    border: solid 2px black;
+}
+
+.itensFichas {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-gap: 70px;
+    
+}
+
+.ficha {
+    background-color: white;
+    transition: 0.1s;
+    height: 180px;
+}
+
+.ficha:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 20);
+    height: 220px;
+    
+}
+
+.descricao {
+    
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#escolha{
+    margin: 30px 20px;
+}
+
+
+

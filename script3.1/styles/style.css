@@ -1,0 +1,21 @@
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.entrada {
+    width: 250px;
+}
+
+.manipulando {
+    margin-top: 20px;
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+}
+.container{
+    background-color:peachpuff;
+    border: solid 2px gold;
+    
+}

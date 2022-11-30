@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" class="formulario">
+            <div class="entrada" id="elemento1">
+                <label> Nome
+                    <input type="texto">
+                </label>
+            </div>
+            <div class="entrada" id="elemento2">
+                <label> Endereço
+                    <input type="texto">
+                </label>
+            </div>
+            <section class="entrada" id="elemento3">
+                <div> Dias de funcionamento:
+                    <div>
+                        <label><input type="checkbox" id="segunda" />Segunda</label>
+                        <label><input type="checkbox" id="terca" />Terça</label>
+                        <label><input type="checkbox" id="quarta" />Quarta</label>
+                        <label><input type="checkbox" id="quinta" />Quinta</label>
+                        <label><input type="checkbox" id="sexta" />Sexta</label>
+                        <label><input type="checkbox" id="sabado" />Sábado</label>
+                        <label><input type="checkbox" id="domingo" />Domingo</label>
+                    </div>
+                </div>
+            </section>
+            <div class="entrada" id="elemento4">
+                <label> Horário abertura
+                    <input type="time">
+                </label>
+            </div>
+            <div class="entrada" id="elemento5">
+                <label> Horário fechamento
+                    <input type="time">
+                </label>
+            </div>
+        </form>
+
+        <div class="manipulando">
+            <button id="alinhaInicio" value="flex-start">Alinhar Inicio</button>
+            <button id="alinhaFinal" value="flex-end">Alinhar Final</button>
+            <button id="vertical" value="column">Vertical</button>
+            <button id="horizontal" value="row">Horizontal</button>
+            
+        </div>
+    </div>
+
+    <script src="./input2.3.1.js"></script>
+</body>
+</html>
